@@ -1,9 +1,13 @@
 :root{
   --color-container: #A27F5C;
-  --color-letter: #538742;
+  --color-tree: #538742;
+  --color-border: #72553D;
+  --color-heads: #FAF399 ;
+  --color-tale: #D1DFA6;
+  --color-mouth: #966364;
 }
 h1{
-  color: var(--color-letter);
+  color:var(--color-heads)
 }
 
 .App {
@@ -15,36 +19,48 @@ h1{
 .centered{
   display: flex;
   flex-direction: row;
+  height: 1000px ;
+  width: 1250px;
  justify-content: space-between;
+  align-items: center;
+ /* border: 2px solid red; */
+ 
 }
 .container{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap; 
-  /* column-count: 3; */
-  /* gap: 30px;  */
   height: 900px ;
   width: 900px;
-  border: 3px solid var(--color-letter);
-  /* font-size: larger; */
-  /* margin: 100px;
-  margin-top: 240px; */
+  /* border: 3px solid var(--color-tree); */
+  padding-top: 10px;
+  
 }
 .dashboard{
   display: flex;
   flex-direction: column;
   height: 200px ;
   width: 200px;
-  border: 3px solid  var(--color-letter);
 }
+
 .getPokemon{
   height: 50px ;
   width:100px;
 }
+
 input{
+  position: fixed;
   height: 40px ;
   width:150px;
+  border: none;
+  outline: none;
+  /* border-radius: 0 15px; */
+  border-radius: 20px;
+  padding: 0 25px;
+  background-color: var(--color-heads);
+  color: var(--color-tree)
 }
+
 label{
   height: 40px ;
   width:150px;
@@ -55,26 +71,25 @@ label{
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  width: 160px;
+  width: 140px;
   height: 250px;
   margin: auto;
-  border: 0.5px solid lightgrey; 
-  border-radius: 30px;
+  border-radius: 15px;
   padding: 1em;
-  box-shadow: 10px 5px 7px var(--color-letter);
+  box-shadow: 0px 4px 12px -2px ;
   color:  #120902;
-  /* background-color: white; */
   opacity: 1;
   
 }
 a{
   text-decoration: none;
+  color: var(--color-tale);
 }
 img{
   height: 150px ;
   width:150px;
-  border: 2px solid var(--color-letter);
-  border-radius: 3px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 12px -2px;
 }
 .pokeType{
   display: flex;
@@ -85,22 +100,62 @@ img{
 .classType{
   height: 20px ;
   width:70px;
-  border: 1px solid var(--color-letter) ;
-  border-radius: 5px;
+  border-radius: 10px;
   text-align: center;
+  background-color: var(--color-border);
+  color: var(--color-tale);
 }
 .cardMax{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  width: 500px;
+  width: 160px;
   height: 500px;
   margin: auto;
-  border: 0.5px solid lightgrey; 
-  border-radius: 30px;
+  border-radius: 15px;
   padding: 1em;
-  box-shadow: 10px 5px 7px var(--color-letter);
+  box-shadow: 0px 4px 12px -2px ;
   color:  #120902;
   opacity: 1;
+} 
+
+.navBar{
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* border: 2px solid red; */
+  border-radius: 20px;
+  width: 550px;
+  height: 50px;
+  background-color: var(--color-tree);
+  color: var(--color-heads);
+}
+
+span{
+  /* border: 2px solid yellow; */
+  padding: 15px;
+  border-radius: 20px;
+}
+
+span:hover{
+  background-color: var(--color-mouth);
+}
+
+.formClass{
+  /* position: relative; */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  border: 2px solid red;
+  width: 300px;
+  height: 200px;
+
+}
+.formClass input{
+  border: 2px solid yellow;
+  height: 30px ;
+  width:100px;
+  border-radius: 0px 0 20px 0px;
 }

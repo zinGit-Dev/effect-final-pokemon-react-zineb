@@ -21,6 +21,7 @@ export default function CardMax(props) {
             <img src={pokemonDetail.picture} alt={pokemonDetail.name} />
           </div>
           <p>n:{pokemonDetail.id}</p>
+          {/* <div>{pokemonDetail.held_items.item.name}</div> */}
           <div> {pokemonDetail.name}</div>
           <div className="pokeType">
             <div className="classType">{pokemonDetail.type1}</div>

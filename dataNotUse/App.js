@@ -2,12 +2,12 @@ import { useState, useEffect, useRef } from "react";
 import "./App.css";
 import { v4 } from "uuid";
 
-import Button from "./Components/Button";
-import Input from "./Components/Input";
-import Label from "./Components/Label";
-import Card from "./Components/Card";
+import Button from "../src/Components/Button";
+import Input from "../src/Components/Input";
+import Label from "../src/Components/Label";
+import Card from "../src/Components/Card";
 import axios from "axios";
-import UseDebounce from "./Components/UseDebounce";
+import UseDebounce from "../src/Components/UseDebounce";
 
 function App() {
   const [name, setName] = useState("");

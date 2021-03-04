@@ -8,6 +8,9 @@ import App from "./App4";
 ReactDOM.render(
   <React.StrictMode>
     <Router>
+    <div>
+    <h2>Pokémon Effect</h2>
+  </div>
       <App />
     </Router>
   </React.StrictMode>,

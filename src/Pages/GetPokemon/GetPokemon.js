@@ -45,7 +45,7 @@ export default function GetPokemon(props){
   return (
       <div>
     <div>
-    <h1>Pokémon Effect</h1>
+    <h1>.</h1>
   </div>
   <div className="centered">
     <div className="container">
@@ -63,8 +63,8 @@ export default function GetPokemon(props){
         : null}
     </div>
     <div className="dashboard">
-      <Input className="input" value={name} onChange={handleChange} />
-      <Label text={name} />
+      <Input className="input" value={name} onChange={handleChange}  />
+      {/* <Label text={name} /> */}
     </div>
   </div>
   </div>

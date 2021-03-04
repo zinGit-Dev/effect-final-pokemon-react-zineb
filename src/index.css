@@ -1,11 +1,22 @@
+
+
+
 body {
   /* margin: 0; */
-  /* background: url(./assets/pokemon-plant3.png) no-repeat center center fixed;
+ 
+  background: url(./assets/pokemon-plant3.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; */
-   /* font-family: Arial, Helvetica, sans-serif; */
+  background-size: cover;
+  
    font-family: "Flexo-Medium",arial,sans-serif;
+   
+
 }
 
+h2{
+  position: fixed;
+  color: #FAF399;
+  
+}

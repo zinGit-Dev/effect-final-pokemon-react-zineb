@@ -4,14 +4,14 @@ import "./App.css";
 import { v4 } from "uuid";
 import { useForm } from "react-hook-form";
 
-import Button from "./Components/Button";
-import Input from "./Components/Input";
-import Label from "./Components/Label";
-import Card from "./Components/Card";
+import Button from "../src/Components/Button";
+import Input from "../src/Components/Input";
+import Label from "../src/Components/Label";
+import Card from "../src/Components/Card";
 import axios from "axios";
-import UseDebounce from "./Components/UseDebounce";
-import FormNewPokemon from "./Pages/Form/FormNewPokemon"
-import Home from "./Components/Home"
+import UseDebounce from "../src/Components/UseDebounce";
+import FormNewPokemon from "../src/Pages/Form/FormNewPokemon"
+import Home from "../src/Components/Home"
 
 function App() {
   const [name, setName] = useState("");
