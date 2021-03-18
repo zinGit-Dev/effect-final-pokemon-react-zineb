@@ -35,12 +35,15 @@ function App() {
 
   return (
     <div className="App">
+    
       <NavBar />
+      
+      
       <div>
         <Switch>
 
           <Route exact path="/home">
-            <Home />
+            {/* <Home /> */}
           </Route>
 
           <Route exact path="/getPokemon">
