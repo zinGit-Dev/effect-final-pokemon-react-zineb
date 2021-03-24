@@ -9,6 +9,9 @@
 h1{
   color:var(--color-heads)
 }
+.home{
+  border: 2px solid red;
+}
 
 .App {
   display:flex;
@@ -23,18 +26,13 @@ h1{
   width: 1250px;
  justify-content: space-between;
   align-items: center;
- /* border: 2px solid red; */
- 
 }
 .container{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap; 
   height: 900px ;
-  width: 900px;
-  /* border: 3px solid var(--color-tree); */
   padding-top: 10px;
-  
 }
 .dashboard{
   display: flex;
@@ -54,7 +52,6 @@ input{
   width:150px;
   border: none;
   outline: none;
-  /* border-radius: 0 15px; */
   border-radius: 20px;
   padding: 0 25px;
   background-color: var(--color-heads);
@@ -91,7 +88,6 @@ img{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /* row-gap: 10px; */
 }
 .classType{
   height: 20px ;
@@ -121,8 +117,7 @@ img{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /* border: 2px solid red; */
-  border-radius: 15px;
+  border-radius: 10px;
   width: 550px;
   height: 50px;
   background-color: var(--color-tree);
@@ -130,65 +125,61 @@ img{
 }
 
 span{
-  /* border: 2px solid yellow; */
   padding: 15px;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 span:hover{
   background-color: var(--color-mouth);
 }
+span:focus-within{
+  background-color: var(--color-mouth);
+}
+
 
 .formClass{
-   /* position: relative;  */
   display: flex;
   flex-direction: column-reverse;
-  
-  /* justify-content: space-around; */
- 
-  /* border: 2px solid var(--color-tree); */
   width: 400px;
-  height: 300px;
+  height: 390px;
   padding: 32px;
   margin-top: 2px;
   margin-right: auto;
   margin-left: auto;
-  /* max-width: remy(380px); */
   background-color:var(--color-heads);
   border-radius: 3px;
   box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
-
-
 }
 .formClass input{
-  /* display: block; */
-  
-  background-color: var(--color-mouth);
+   background-color: var(--color-tree); 
   height: 20px ;
   width:100px;
-  border-radius: 5px;
-  
+  border-radius: 2px;
+  color: var(--color-heads);
+  opacity: .5;
+}
+
+.formClass label{
+  color:var(--color-mouth);
+  font-weight: bold;
 }
 
  .formInside{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  /* padding: 10px; */
+  width: 400px;
+  height: 350px;
 } 
 
 label{
-  /* height: 40px ;
-  width: 100 px;
-  border: 1px solid violet;
-  padding: 15px;
-  margin: 20px; */
   display: block;
   margin-bottom: .5rem;
   font-size: .75rem;
   text-transform: uppercase;
   touch-action: manipulation;
 }
+
 button{
   display: inline-block;
   padding: .75rem 1rem;
@@ -199,10 +190,15 @@ button{
   color: var(--color-heads);
   vertical-align: middle;
   white-space: nowrap;
-  background-color: var(--color-mouth);
+  background-color: var(--color-tree);
   border: 1px solid transparent;
   box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 2px;
   height: auto;
+  opacity: .5;
+}
+button:hover{
+  background-color:var(--color-border);
+  
 }

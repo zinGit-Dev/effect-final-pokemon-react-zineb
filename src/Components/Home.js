@@ -2,7 +2,7 @@ export default function Home(props) {
   const { picture, name, className } = props;
   return (
     <div className="home">
-      <img className={className} src={picture} alt={name} />
+      <h2>WELCOME TO POKEDEX</h2>
     </div>
   );
 }
