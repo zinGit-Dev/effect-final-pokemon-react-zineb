@@ -32,7 +32,11 @@ h1{
   justify-content: space-around;
   flex-wrap: wrap; 
   height: 900px ;
-  padding-top: 10px;
+  /* padding-top: 10px; */
+  border: 2px solid red;
+  column-gap: 20px;
+  row-gap: 20px;
+  padding: 20px;
 }
 .dashboard{
   display: flex;
@@ -72,7 +76,7 @@ input{
   box-shadow: 0px 4px 12px -2px ;
   color:  #120902;
   opacity: 1;
-  
+ background-color: var(--color-tree);
 }
 a{
   text-decoration: none;
@@ -91,11 +95,15 @@ img{
 }
 .classType{
   height: 20px ;
-  width:70px;
-  border-radius: 10px;
+  width:65px;
+  border-radius: 5px;
+  row-gap: 10px;
   text-align: center;
-  background-color: var(--color-border);
-  color: var(--color-tale);
+  /* background-color: var(--color-mouth); */
+  /* color: var(--color-heads); */
+  color:black;
+  /* border:.5px solid var(--color-heads); */
+  border:.5px solid black;
 }
 .cardMax{
   display: flex;

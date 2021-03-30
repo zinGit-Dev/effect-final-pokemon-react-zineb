@@ -43,7 +43,7 @@ function App() {
         <Switch>
 
           <Route exact path="/home">
-            {/* <Home /> */}
+            <Home />
           </Route>
 
           <Route exact path="/getPokemon">
