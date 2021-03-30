@@ -14,7 +14,7 @@ function App() {
     const [pokedex, setPokedex] = useState([])
   function handleSubmitForm(newPoKemon) {
     console.log("new pokemons=>", newPoKemon);
-    setList([...list, newPoKemon]);
+    setList([...pokedex, newPoKemon]);
   }
 
   const addNewPokemonToList = pokemon => {
